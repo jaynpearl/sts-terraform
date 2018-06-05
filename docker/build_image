@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+IMAGE_NAME="search_exp/aws_terraform"
+VERSION="0.1.0"
+
+docker build --no-cache -t "${IMAGE_NAME}:latest" .
+
+docker tag "${IMAGE_NAME}:latest" "${IMAGE_NAME}:${VERSION}"
