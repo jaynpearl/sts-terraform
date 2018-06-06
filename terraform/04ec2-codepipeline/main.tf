@@ -8,6 +8,5 @@ resource "aws_instance" "t2-ec2-instance" {
   tags = {
     Name = "terraform ec2 from codepipeline"
     Environment = "development"
-    Foo = "Bar"
   }
 }
