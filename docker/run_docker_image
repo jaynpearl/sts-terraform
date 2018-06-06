@@ -2,4 +2,4 @@
 
 MOUNT="`pwd`/../terraform:/seek/terraform"
 
-docker run --network=host -ti -v "$MOUNT" --rm --privileged=true --name aws_terraform search_exp/aws_terraform:latest bash
+docker run --env-file=".env" --network=host -ti -v "$MOUNT" --rm --privileged=true --name aws_terraform search_exp/aws_terraform:latest bash
